@@ -45,8 +45,7 @@ public class CreateNewTestRun extends BaseTest {
         CreateTestRun createTestRun = new CreateTestRun();
         createTestRun.newtestrun(driver);
         Thread.sleep(4000);
-
-
+        driver.findElement(By.xpath("//input[@name='commit']")).click();
         Thread.sleep(4000);
         WebElement errorMessage = driver.findElement(By.className("message"));
         assertTrue(errorMessage.getText().contains("can't be blank"));
