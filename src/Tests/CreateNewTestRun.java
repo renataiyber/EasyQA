@@ -37,7 +37,7 @@ public class CreateNewTestRun extends BaseTest {
     }
 
     @Test
-    public void NegativeCreateNewTestRun() throws InterruptedException {
+    public void NegativeEmptyCreateNewTestRun() throws InterruptedException {
 
         LogInPage logInPage = new LogInPage();
         logInPage.loginPositiveTest(driver);
