@@ -17,7 +17,7 @@ public class LogInPage {
 
     public void loginPositive(WebDriver driver) throws InterruptedException {
         String login = "renata.iyber@thinkmobiles.com";
-        String pass = "130613rena";
+        String pass = "130613renata";
         login(driver, login, pass);
         Thread.sleep(5000);
     }

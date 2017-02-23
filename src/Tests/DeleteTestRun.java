@@ -29,7 +29,7 @@ public class DeleteTestRun extends BaseTest {
         driver.findElement(By.xpath("//div[@id='assignedTestRun']/ul/li[2]/a/label")).click();
         driver.findElement(By.xpath("//div[@id='assignedTestRun']/ul/li[2]/a/label")).submit();
         Thread.sleep(6000);
-        driver.findElement(By.xpath("//div[@id='test-run-89']/div[2]/a[3]")).click();
+        //driver.findElement(By.xpath("//div[@id='test-run-89']/div[2]/a[3]")).click();
         driver.findElement(By.linkText("Delete")).click();
         driver.switchTo().alert().accept();
         Thread.sleep(4000);
